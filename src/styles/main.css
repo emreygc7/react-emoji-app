@@ -1,0 +1,71 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.title{
+    font-size: 1rem;
+}
+
+.top input {
+    padding: .5rem 1rem;
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.top input::placeholder{
+    text-align: left;
+}
+
+.top input:focus{
+    outline: none;
+}
+
+.top p {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    font-weight: 100;
+}
+
+.emoji-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.emojis{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    background-color: #1E293B;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (min-width:769px){
+    .title {
+        font-size: 2rem;
+    }
+    .top p {
+        font-size: 3.3rem;
+    }
+}
